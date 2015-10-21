@@ -1,6 +1,6 @@
 name: Samson Stannus
 markdown: kramdown
-highlighter: pygemnts
+highlighter: pygments
 url: samsonstannus.us
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
