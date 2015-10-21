@@ -1,0 +1,7 @@
+name: Samson Stannus
+markdown: kramdown
+highlighter: pygemnts
+url: samsonstannus.us
+lsi: false
+exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
+permalink: /blog/:year/:month/:day/:title

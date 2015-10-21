@@ -1,0 +1,43 @@
+---
+layout: default
+title: home
+---
+
+<div id="home">
+  <h1> Welcome to my website </h1>
+  <h4> The Plan for the Site </h4>
+  <p> So the idea is to write random thoughts about programming and gaming, and maybe a few tutorials along the way. I'm interested in game development, web development, and a bit of computer graphics programming; so, as I learn neat stuff I'll share it here! </p>
+</br>
+  <h4> 
+
+  <h2><i class="fa fa-sticky-note"></i> Recent Posts</h2>
+  <ul id="blog-posts" class="posts">
+    {% for post in site.posts limit: 2 %}
+      <li><span>{{ post.date | date_to_string }} &raquo;</span><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <h1> Contact Me </h1>
+  <div class="row">
+	  <form action="//formspree.io/samson.stannus@mail.mcgill.ca"
+	      method="POST">
+	    <div class="four columns">
+		    <input type="text" name="name" placeholder="Your Name">
+		</div>
+		<div class="four columns">
+		    <input type="email" name="_replyto" placeholder="Your Email">
+		</div>
+
+	    <textarea class="eight columns" name="message" placeholder="Your Message"></textarea>
+	</br>
+	    <div class="four columns">
+	    	<input type="text" name="_gotcha" style="display:none" />
+	    	<input class="button-primary" type="submit" value="Send">
+		</div>
+
+
+	    
+  </div>
+	  </form>
+  
+  
+</div>
