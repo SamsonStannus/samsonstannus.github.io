@@ -12,13 +12,18 @@ title: home
 
   <h2><i class="fa fa-file-text-o"></i> <a href="/blog">Recent Posts</a></h2>
   <ul id="blog-posts" class="posts">
-    {% for post in site.posts limit: 2 %}
+    {% for post in site.categories.blog limit: 2 %}
       <li><span>{{ post.date | date_to_string }} &raquo;</span><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </br>
 
   <h2><i class="fa fa-file-code-o"></i> <a href="/projects">Check Out my Projects</a></h2>
+  <ul id="blog-posts" class="posts">
+    {% for post in site.categories.projects limit: 2 %}
+      <li><span>&raquo;</span><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
   <hr>
   <h1 id="contact"> Contact Me </h1>
   <div class="row">
@@ -33,8 +38,9 @@ title: home
 		</div>
   </div>
   <div class="row">
-
-	    <textarea class="twelve columns" name="message" placeholder="Your Message"></textarea>
+      <div class="eight columns">
+	     <textarea class="u-full-width" name="message" placeholder="Your Message"></textarea>
+      </div>
 	</br>
 	    
 	    	<input type="text" name="_gotcha" style="display:none" />
