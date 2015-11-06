@@ -9,15 +9,15 @@ html, body {
 
 body {
   font-size: 16px;
-  background-color: #333;
-  color: #eee;
+  background-color: #FFF;
+  color: #333;
   line-height: 24px;
   margin: 0;
   border-top: 7px solid {{ site.data.theme.highlight_color }};
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #fff;
+  color: #222;
   font-family: "open sans", sans-serif;
   font-weight: 600;
 }
@@ -86,7 +86,7 @@ ul.posts li {
 
 ul.posts span {
   font-family: 'Lucida Console', 'Andale Mono', monospace;
-  color: #eee;
+  color: #555;
   padding-right: 5px;
   font-size:14px;
 }
@@ -121,7 +121,7 @@ nav h1, nav h2 {
 
 #post pre {
   border: 1px solid #2A1F83;
-  background-color: #4634DB;
+  background-color: #333;
   padding: 0 .4em;
   margin-bottom: 20px !important;
 }
@@ -133,7 +133,8 @@ nav h1, nav h2 {
 
 #post code {
   border: 1px solid #2A1F83;
-  background-color: #4634DB;
+  background-color: #333;
+  color: white;
   font-size: 85%;
   padding: 0 .2em;
 }
