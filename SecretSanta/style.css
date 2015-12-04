@@ -16,6 +16,9 @@ body{
     margin:0px; 
     padding:100px; 
 }
+.retry{
+    opacity:0;
+}
 .hideme
 {
     opacity:0;

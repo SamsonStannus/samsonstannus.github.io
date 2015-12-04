@@ -18,12 +18,13 @@
     <div class="hideme">But wait what's this?! <span style="font-family: courier; color: #333;">[<span style="color: #ffff33">SELECT</span> gifts <span style="color: #ffff33">FROM</span> nice_list <span style="color: #ffff33">WHERE</span> (last_name=<span style="color: #00cc00;">"Lyle"</span> <span style="color: #ffff33">AND</span> first_name=<span style="color: #00cc00;">"Clare"</span>)]</span> returns nothing...</div>
     <div class="hideme">...It seems you've been put on the Naughty List! This is obviously a mistake. Rather than bug Santa, you decide to fix this problem yourself and get to hacking! </div>
     <div class="hideme">See how much hacking you can get done before Santa's IT team stops you! (and by hacking I mean type characters as quick as you can!)</div>
-    <div  style="margin-bottom:200px;" class="hideme">
+    <div class="hideme">
     	Rules: Once you start typing Santa's IT team will start deleting your characters! They will get progressively faster at deleting so be as quick as you can as long as you can!
     	<hr>
     	<input id="game" type="text" placeholder="Type as fast as you can!">
     	Score: </span><span class="counter">0</span><span class="prize"></span>
     </div> 
+    <div class="retry">To retry simply reload the page</div>
     
 </div>
 <footer style="background-image: url('sweater_pattern.jpg');"></footer>
@@ -142,6 +143,7 @@
 			if (x.length === 0){
 				clearInterval(interval_counter);
 				$('input').attr("placeholder", "Have a Great Winter Break and Good Luck on Exams!")
+				$('.retry').animate({'opacity':'1'},500);
 			}
 			$('input').val(x.slice(0,-1));
 
