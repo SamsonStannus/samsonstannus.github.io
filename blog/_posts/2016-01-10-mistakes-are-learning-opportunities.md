@@ -11,7 +11,7 @@ For those new interns out there: making a bug isn't the end of the world.
 
 ## Making the bug
 
-So, the other day I introduced a small bug in to a project I was working on (I'm not proud of it, but in my defence I was still learning Spring Boot at the time) and I was scared. Here I was a new intern at a company that was so kind to hire me and teach me, and what do I do? I break a service. Luckily my bug didn't get past the feature branch, but I was worried my job was on the line. For those of you who are curious I forgot to add a value in the properties file and I was relying on `maven clean install` to let me know if everything was okay. This lead to the tests passing, but the application not actually being able to run... 
+So, the other day I introduced a small bug into a project I was working on (I'm not proud of it, but in my defence I was still learning Spring Boot at the time) and I was scared. Here I was a new intern at a company that was so kind to hire me and teach me, and what do I do? I break a service. Luckily my bug didn't get past the feature branch, but I was worried my job was on the line. For those of you who are curious: I forgot to add a value in the properties file and I was relying on `maven clean install` to let me know if everything was okay. This lead to the tests passing, but the application not actually being able to run... 
 
 ## Dealing with the bug
 
