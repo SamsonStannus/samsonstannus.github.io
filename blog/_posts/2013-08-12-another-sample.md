@@ -30,6 +30,32 @@ iPhone try-hard jean shorts.
 
 > This is a quote from someone famous about productivity
 
+<style>
+
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+
+</style>
+<div class="chart">
+  <div style="width: 40px;">4</div>
+  <div style="width: 80px;">8</div>
+  <div style="width: 150px;">15</div>
+  <div style="width: 160px;">16</div>
+  <div style="width: 230px;">23</div>
+  <div style="width: 420px;">42</div>
+</div>
+
+<script src="../../assets/javascript/d3/d3.min.js">
+	var body = d3.select("body");
+	var div = body.append("div");
+	div.html("Hello, world!");
+</script>
 
 Syntax highlighting with Solarized theme.
 
