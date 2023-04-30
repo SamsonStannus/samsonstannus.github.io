@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+    @apply text-blue-600
+}
+a:hover {
+    @apply underline text-blue-800
+}
+a:visited {
+    @apply text-purple-600
+}
+ul {
+    @apply list-disc list-inside -mt-3 mb-3
+}
+p {
+    @apply mb-4 leading-relaxed
+}
+h1 {
+    @apply mb-3 text-3xl font-bold
+}
+h2 {
+    @apply mb-2 text-2xl font-bold
+}
+code {
+    @apply bg-gray-200 font-mono rounded
+}

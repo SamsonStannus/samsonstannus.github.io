@@ -1,0 +1,32 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          # update the Node version to meet your needs
+          node-version: 19
+          cache: yarn
+
+      - name: Build
+        run: |
+          yarn install --frozen-lockfile
+          # configure the build here
+          yarn build
+          touch out/.nojekyll
+
+      - name: Deploy
+        # configure an external GitHub Pages deploy workflow here
+        # https://github.com/JamesIves/github-pages-deploy-action
+        uses: JamesIves/github-pages-deploy-action@4.4.0 
+        with:
+          branch: gh-pages
+          folder: out

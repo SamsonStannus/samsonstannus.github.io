@@ -1,2 +1,1 @@
-# SamsonStannus.github.io
-Personal Site
+My Personal Website.

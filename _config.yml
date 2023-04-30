@@ -1,7 +1,0 @@
-name: Samson Stannus
-markdown: kramdown
-highlighter: pygments
-url: samsonstann.us
-lsi: false
-exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
-permalink: /:categories/:year/:month/:day/:title
