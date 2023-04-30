@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import imgixLoader from '../lib/loader';
 
 const name = 'Your Name';
 export const siteTitle = 'Next.js Sample Website';
@@ -24,14 +25,14 @@ export default function Layout({ children, name }) {
                     <meta name="og:title" content={siteTitle} />
                 </Head>
                 <Image
-                key="profile"
-                loader="imgix"
-                priority
-                src="/images/profile-close.jpg"
-                className={"rounded-full"}
-                height={120}
-                width={120}
-                alt=""
+                    priority
+                    key="profile"
+                    loader={imgixLoader}
+                    src="/images/profile-close.jpg"
+                    className={"rounded-full"}
+                    height={120}
+                    width={120}
+                    alt=""
                 />
                 <div className="text-xl">{children}</div>
                 <Link className="text-xl pb-10" href="/">&larr; back to home </Link>

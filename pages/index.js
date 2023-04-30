@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Date from '../components/date';
 import { getSortedPostsData } from '../lib/posts';
+import imgixLoader from '../lib/loader';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -25,7 +26,7 @@ export default function Home({ allPostsData }) {
         <main className='flex gap-4 justify-center items-center'>
             <Image
                 key="profile"
-                loader="imgix"
+                loader={imgixLoader}
                 priority
                 src="/images/profile-close.jpg"
                 className={"rounded-full"}
