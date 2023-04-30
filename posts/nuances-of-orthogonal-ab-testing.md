@@ -4,13 +4,13 @@ date: '2023-04-28'
 tag: 'a/b testing'
 ---
 
-Every team I've worked on has, at one point or another, needed some A/B testing functionality. But as buckets become limited there's always a lot of pressure to switch to Orthogonal A/B test groups is always proposed.
+Every team I've worked on has, at one point or another, needed some A/B testing functionality. But as buckets become limited there's always a lot of pressure to start using Orthogonal A/B test groups.
 
 While there is a place for Orthogonal A/B testing, I'd caution people from immediately thinking they've found endless buckets to use. I hope by outlining some gotchas of Orthogonal A/B testing you can make more informed decisions about when to stick with a single layer of A/B groups, and when it is in fact time to deploy overlapping experiments.
 
 ## What even is "Orthogonal" A/B Testing?
 
-You may know this style of experimenting as "Overlapping Test Splits" as well. The idea is pretty straight forward. For a single layer of A/B testing you randomize users into different buckets. So, if you just use a different seed for each layer of A/B tests, the users in each layer should have a uniformly random chance of falling into any other layer of A/B tests. This allows you to run multiple experiments per user, and still have that gold standard for analyzing causality for each layer.
+You may know this style of experimenting as "Overlapping Test Splits". The idea is pretty straight forward. For a single layer of A/B testing you randomize users into different buckets. So, if you just use a different seed for each layer of A/B tests then the users in each layer should have a uniformly random chance of falling into any other layer of A/B tests. This allows you to run multiple experiments per user, and still have that gold standard of analyzing causality for your treatments in each layer.
 
 To run orthogonal A/B tests you _only_ need to make sure each experiment layer is statistically independent (I mean that's why it's called _orthogonal_ after all). That being said, making sure everything is independent is much easier said than done.
 
