@@ -25,6 +25,7 @@ export default function Home({ allPostsData }) {
         <main className='flex gap-4 justify-center items-center'>
             <Image
                 key="profile"
+                loader="imgix"
                 priority
                 src="/images/profile-close.jpg"
                 className={"rounded-full"}

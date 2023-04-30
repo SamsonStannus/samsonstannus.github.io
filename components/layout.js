@@ -25,6 +25,7 @@ export default function Layout({ children, name }) {
                 </Head>
                 <Image
                 key="profile"
+                loader="imgix"
                 priority
                 src="/images/profile-close.jpg"
                 className={"rounded-full"}
