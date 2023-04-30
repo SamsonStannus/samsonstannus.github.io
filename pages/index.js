@@ -17,7 +17,7 @@ export async function getStaticProps() {
 export default function Home({ allPostsData }) {
   return (
     <div className='h-screen flex flex-col items-center'>
-      <div className="mt-48 max-w-none md:max-w-prose">
+      <div className="mt-48 mx-10 max-w-none md:max-w-prose">
         <Head>
           <title>Samson Stannus</title>
           <link rel="icon" href="/favicon.ico" />

@@ -9,7 +9,7 @@ export const siteTitle = 'Next.js Sample Website';
 export default function Layout({ children, name }) {
     return (
         <div className='h-screen flex flex-col items-center'>
-            <div className='mt-32 max-w-none md:max-w-prose'>
+            <div className='mt-32 mx-10 max-w-none md:max-w-prose'>
                 <Head>
                     <link rel="icon" href="/favicon.ico" />
                     <meta
