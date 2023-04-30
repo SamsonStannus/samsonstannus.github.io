@@ -4,8 +4,8 @@
 const nextConfig = {
     output: 'export',
     images: {
-        loader: 'custom',
-        path: './lib/loader.js',
+        loader: 'imgix',
+        path: 'https://samsonstannus.imgix.net/',
       },
   }
   
