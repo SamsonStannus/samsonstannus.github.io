@@ -27,7 +27,7 @@ Often times clashing experiments can be avoided with good domain boundaries betw
 
 If only it were so simple. There are endless, unintuitive ways two experiments can interfere with one another. 
 
-That being said, it's really not worth the effort to think of every edge case in advance. Just split experimentation layers on intuition at first, and then let the data show you whre there are some non-independent layers. Worse case scenario is two teams have impacted each other's experiments. But you can just chalk it up to a great learning experience and improve your processes in the next round. Experimentation is about learning, and your A/B testing system is an experiment in and of itself!
+That being said, it's really not worth the effort to think of every edge case in advance. Just split experimentation layers on intuition at first, and then let the data show you where there are some non-independent layers. Worse case scenario is two teams have impacted each other's experiments. But you can just chalk it up to a great learning experience and improve your processes in the next round. Experimentation is about learning, and your A/B testing system is an experiment in and of itself!
 
 ## Apples & Oranges
 
